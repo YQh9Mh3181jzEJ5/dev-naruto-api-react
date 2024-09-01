@@ -1,4 +1,4 @@
-// import dummyImage from "/assets/dummyImage.png";
+import dummy from "../../assets/dummy.png";
 import "./Card.css";
 import { Character } from "../../types/character";
 
@@ -9,7 +9,7 @@ const Card = ({ character }: CardProps) => {
   return (
     <div className="card" key={character.id}>
       <img
-        src={character.images?.[0] ?? ""}
+        src={character.images?.[0] ?? dummy}
         alt={`${character.name}の画像`}
         className="card-image"
       ></img>
