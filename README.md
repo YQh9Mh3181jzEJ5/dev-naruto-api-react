@@ -1,30 +1,65 @@
-# React + TypeScript + Vite
+# ナルト キャラクター図鑑 🍥
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## プロジェクト概要 📚
 
-Currently, two official plugins are available:
+このプロジェクトは、[[Naruto DB]](https://narutodb.xyz/) の API を使用して、ナルトのキャラクター情報をカード形式で表示するウェブアプリケーションです。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 主な機能 🌟
 
-## Expanding the ESLint configuration
+- キャラクター情報の表示（画像、名前、所属など）
+- ページネーション機能
+- レスポンシブデザイン
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 使用技術 🛠️
 
-- Configure the top-level `parserOptions` property like this:
+- React 18.3.1
+- TypeScript 5.2.2
+- Vite 5.3.1
+- Axios 1.7.2
+- CSS Modules
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## プロジェクト構造 📂
+
+```shell
+├── App.css
+├── App.tsx
+├── assets
+│   └── dummy.png
+├── components
+│   ├── Card
+│   │   ├── Card.css
+│   │   └── Card.tsx
+│   ├── Header
+│   │   ├── Header.css
+│   │   └── Header.tsx
+│   └── Pager
+│       ├── Pager.css
+│       └── Pager.tsx
+├── constant
+│   └── limit.ts
+├── hooks
+│   └── useCharacters.ts
+├── index.css
+├── main.tsx
+├── types
+│   └── character.ts
+└── vite-env.d.ts
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 使用方法 💻
+
+- アプリケーションを起動すると、ナルトのキャラクター情報がカード形式で表示されます。
+- ページネーションボタンを使用して、さらに多くのキャラクターを閲覧できます。
+
+## デプロイ情報 🌐
+
+このプロジェクトは Vercel にデプロイされています。
+以下の URL からアクセスできます：
+
+[[デプロイ先の URL]](https://naruto-library.vercel.app/)
+
+## 今後の改善点 🔧
+
+- 検索機能の追加
+- キャラクター詳細ページの実装
+- パフォーマンスの最適化
