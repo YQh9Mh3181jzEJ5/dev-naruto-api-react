@@ -1,6 +1,12 @@
 .card {
   border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  transition: transform 0.3s;
 }
 
 .card-image {
