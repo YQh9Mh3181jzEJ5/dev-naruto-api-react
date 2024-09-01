@@ -6,7 +6,7 @@
 }
 
 .pager button {
-  width: 125px;
+  width: 200px;
   margin: 0 10px;
   padding: 8px 16px;
   color: white;
@@ -30,4 +30,5 @@
 .pager .page-number {
   margin: 0 15px;
   font-size: 1.1em;
+  color: #aaa;
 }

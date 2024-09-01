@@ -14,7 +14,7 @@ function App() {
     <div className="container">
       <Header />
       {isLoading ? (
-        <div>Now Loading...</div>
+        <div className="loading">Now Loading...</div>
       ) : (
         <main>
           <div className="cards-container">

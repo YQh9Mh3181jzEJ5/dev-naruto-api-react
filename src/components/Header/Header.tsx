@@ -1,9 +1,5 @@
 import "./Header.css";
 
-const Header = () => (
-  <div className="header">
-    <h1>Naruto Characters</h1>
-  </div>
-);
+const Header = () => <h1 className="header">ナルト キャラクター図鑑</h1>;
 
 export default Header;

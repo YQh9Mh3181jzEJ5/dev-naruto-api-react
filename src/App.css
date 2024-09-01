@@ -1,7 +1,7 @@
 .container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px 20px;
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -25,24 +25,18 @@ main {
   margin-right: auto;
 }
 
-
-
-.affiliation {
-  font-size: 0.875rem;
-  font-weight: 500;
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
 }
 
-.footer {
-  padding-top: 16px;
-  padding-bottom: 16px;
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-
-.footer-text {
-  font-size: 0.75rem;
-  text-align: center;
-  color: #718096;
-}
-
 @media (max-width: 768px) {
   .container {
     padding: 8px;
