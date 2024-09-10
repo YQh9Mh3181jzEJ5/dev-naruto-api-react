@@ -1,4 +1,8 @@
-# ナルト キャラクター図鑑 🍥
+# ナルト キャラクター図鑑 
+
+![New Project](https://github.com/user-attachments/assets/179b12a5-57ff-4de0-8a07-db80a4ab2ee9)
+
+デプロイ先のURL: https://naruto-library.vercel.app/
 
 ## プロジェクト概要 📚
 
@@ -54,9 +58,6 @@
 ## デプロイ情報 🌐
 
 このプロジェクトは Vercel にデプロイされています。
-以下の URL からアクセスできます：
-
-[[デプロイ先の URL]](https://naruto-library.vercel.app/)
 
 ## 今後の改善点 🔧
 
