@@ -20,7 +20,7 @@ export const useCharacters = (): useCharactersProps => {
 
   useEffect(() => {
     fetchCharacters(page);
-  }, []);
+  }, [page]);
 
   const fetchCharacters = async (page: number) => {
     const apiUrl = "https://narutodb.xyz/api/character";
